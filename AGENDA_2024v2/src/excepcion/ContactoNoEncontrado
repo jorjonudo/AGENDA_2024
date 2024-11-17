@@ -1,0 +1,22 @@
+package excepcion;
+import dominio.*;
+
+
+public class ContactoNoEncontrado extends Exception {
+
+
+    private Contacto contactoNoEncontrado;
+
+
+    public ContactoNoEncontrado(Contacto contactoNoEncontrado){
+        this.contactoNoEncontrado=contactoNoEncontrado;
+    }
+
+
+    public ContactoNoEncontrado(){}
+
+
+    public Contacto getContactoNoEncontrado(){
+        return contactoNoEncontrado;
+    }
+}
